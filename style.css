@@ -1,0 +1,145 @@
+
+@font-face {
+    font-family: norse;
+    src: url(Norse-Bold.otf);
+}
+html, body { 
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+#sidebar {
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+    flex: 1.25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+#signup {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#logobanner {
+    background-color: rgba(0, 0, 0, .50);
+    width: 100%;
+    margin-top: 22vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoimage {
+    width: 96px;
+    margin: 10px 2px;
+}
+
+#logoname {
+    font-size: 96px;
+    font-family: norse, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#photoattribution {
+    font-size: 16px;
+}
+
+#photoattribution > a {
+    color: white;
+}
+
+#signup > * {
+    padding: 2.5vh 5vh;
+    flex: 2;
+    background-color: #f9fafb;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1), 0 15px 40px rgba(166,173,201,.2);
+    margin-bottom: 20px;
+}
+
+.formrows {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2.5vh;
+}
+
+.formcolumns {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+}
+
+.formcolumns > label {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.10rem;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #596D48;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+#buttons {
+    font-size: 18px;
+}
+
+#login {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.formcolumns > input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.formcolumns > input:focus-visible {
+    border: 1px solid rgba(0, 112, 218, 0.5);
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 112, 218, .2);
+}
+
+.formcolumns > input:invalid {
+    border: 1px solid rgba(165, 0, 0, 0.5);
+    outline: none;
+}
